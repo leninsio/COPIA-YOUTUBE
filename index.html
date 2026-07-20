@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="barra-navegacion">
+    <div class="barra-navegacion-izquierda">
+      <button class="btn-icono" type="button" aria-label="Menú">
+        <img src="imagenes/menu.svg" alt="" width="24" height="24">
+      </button>
+      <a href="#" class="logo" aria-label="YouTube Inicio">
+        <img class="icono-yt" src="imagenes/logo-youtube.svg" alt="" width="28" height="20">
+        <span class="logo-texto">YouTube</span>
+        <sup class="codigo-pais">VE</sup>
+      </a>
+    </div>
+
+    <div class="barra-navegacion-centro">
+      <form class="formulario-busqueda" action="#" method="get" role="search">
+        <input type="search" class="input-busqueda" placeholder="Buscar" aria-label="Buscar">
+        <button type="submit" class="btn-busqueda" aria-label="Buscar">
+          <img src="imagenes/buscar.svg" alt="" width="24" height="24">
+        </button>
+      </form>
+      <button class="btn-icono btn-microfono" type="button" aria-label="Buscar por voz">
+        <img src="imagenes/microfono.svg" alt="" width="24" height="24">
+      </button>
+    </div>
+
+    <div class="barra-navegacion-derecha">
+      <button class="btn-icono btn-busqueda-movil" type="button" aria-label="Buscar">
+        <img src="imagenes/buscar.svg" alt="" width="24" height="24">
+      </button>
+      <button class="btn-crear" type="button">
+        <img src="imagenes/crear.svg" alt="" width="24" height="24">
+        <span>Crear</span>
+      </button>
+      <button class="btn-icono" type="button" aria-label="Notificaciones">
+        <img src="imagenes/notificaciones.svg" alt="" width="24" height="24">
+      </button>
+      <button class="btn-avatar" type="button" aria-label="Cuenta">L</button>
+    </div>
+  </header>
+
+  <div class="estructura">
+    <aside class="barra-lateral">
+      <nav class="nav-lateral">
+        <a href="#" class="item-lateral activo">
+          <img src="imagenes/inicio.svg" alt="" width="24" height="24">
+          <span>Principal</span>
+        </a>
+        <a href="#" class="item-lateral">
+          <img src="imagenes/shorts.svg" alt="" width="24" height="24">
+          <span>Shorts</span>
+        </a>
+        <a href="#" class="item-lateral">
+          <img src="imagenes/suscripciones.svg" alt="" width="24" height="24">
+          <span>Suscripciones</span>
+        </a>
+        <a href="#" class="item-lateral">
+          <img src="imagenes/tu.svg" alt="" width="24" height="24">
+          <span>Tú</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="contenido">
+      <div class="barra-categorias">
+        <div class="scroll-categorias">
+          <button class="etiqueta activa" type="button">Todos</button>
+          <button class="etiqueta" type="button">Fútbol</button>
+          <button class="etiqueta" type="button">Argentina</button>
+          <button class="etiqueta" type="button">Portugal</button>
+          <button class="etiqueta" type="button">España</button>
+          <button class="etiqueta" type="button">Brasil</button>
+          <button class="etiqueta" type="button">Mundial</button>
+          <button class="etiqueta" type="button">Champions</button>
+          <button class="etiqueta" type="button">La Liga</button>
+          <button class="etiqueta" type="button">Messi</button>
+          <button class="etiqueta" type="button">Cristiano</button>
+          <button class="etiqueta" type="button">En vivo</button>
+          <button class="etiqueta" type="button">Resúmenes</button>
+          <button class="etiqueta" type="button">Goles</button>
+        </div>
+        <button class="btn-scroll-etiquetas" type="button" aria-label="Más categorías">
+          <img src="imagenes/flecha-derecha.svg" alt="" width="24" height="24">
+        </button>
+      </div>
+
+      <section class="cuadricula-videos" aria-label="Videos recomendados">
+        <article class="tarjeta-video">
+          <a href="https://www.youtube.com/watch?v=FA1sR2SZAlY" class="enlace-miniatura" target="_blank" rel="noopener noreferrer">
+            <img
+              class="miniatura"
+              src="https://i.ytimg.com/vi/FA1sR2SZAlY/hqdefault.jpg"
+              alt="Miniatura Argentina vs Francia final Catar 2022"
+            >
+            <span class="duracion">2:52</span>
+          </a>
+          <div class="info-video">
+            <a href="https://www.youtube.com/watch?v=FA1sR2SZAlY" class="avatar-canal" aria-label="Canal CONMEBOL" target="_blank" rel="noopener noreferrer">
+              <span class="avatar-inicial">C</span>
+            </a>
+            <div class="meta-video">
+              <h3 class="titulo-video">
+                <a href="https://www.youtube.com/watch?v=FA1sR2SZAlY" target="_blank" rel="noopener noreferrer">Argentina 3 (4) - 3 (2) Francia | Resumen completo | Final Catar 2022</a>
+              </h3>
+              <div class="nombre-canal">
+                <a href="#">CONMEBOL</a>
+                <img class="verificado" src="imagenes/verificado.svg" alt="Verificado" width="14" height="14">
+              </div>
+              <p class="estadisticas-video">3.4 M vistas · hace 2 años</p>
+            </div>
+            <button class="btn-mas" type="button" aria-label="Más opciones">
+              <img src="imagenes/mas.svg" alt="" width="24" height="24">
+            </button>
+          </div>
+        </article>
+
+        <article class="tarjeta-video">
+          <a href="https://www.youtube.com/watch?v=MHBwsuJFgyU" class="enlace-miniatura" target="_blank" rel="noopener noreferrer">
+            <img
+              class="miniatura"
+              src="https://i.ytimg.com/vi/MHBwsuJFgyU/hqdefault.jpg"
+              alt="Miniatura Cristiano Ronaldo Portugal"
+            >
+            <span class="duracion">12:08</span>
+          </a>
+          <div class="info-video">
+            <a href="https://www.youtube.com/watch?v=MHBwsuJFgyU" class="avatar-canal" aria-label="Canal Fútbol Total" target="_blank" rel="noopener noreferrer">
+              <span class="avatar-inicial verde">F</span>
+            </a>
+            <div class="meta-video">
+              <h3 class="titulo-video">
+                <a href="https://www.youtube.com/watch?v=MHBwsuJFgyU" target="_blank" rel="noopener noreferrer">Cristiano Ronaldo hace historia | Doblete y victoria de Portugal vs Uzbekistán</a>
+              </h3>
+              <div class="nombre-canal">
+                <a href="#">Fútbol Total</a>
+                <img class="verificado" src="imagenes/verificado.svg" alt="Verificado" width="14" height="14">
+              </div>
+              <p class="estadisticas-video">890 k vistas · hace 3 días</p>
+            </div>
+            <button class="btn-mas" type="button" aria-label="Más opciones">
+              <img src="imagenes/mas.svg" alt="" width="24" height="24">
+            </button>
+          </div>
+        </article>
+
+        <article class="tarjeta-video">
+          <a href="https://www.youtube.com/watch?v=6tt1vdaRaJw" class="enlace-miniatura" target="_blank" rel="noopener noreferrer">
+            <img
+              class="miniatura"
+              src="https://i.ytimg.com/vi/6tt1vdaRaJw/hqdefault.jpg"
+              alt="Miniatura Argentina vs Austria"
+            >
+            <span class="duracion">9:41</span>
+          </a>
+          <div class="info-video">
+            <a href="https://www.youtube.com/watch?v=6tt1vdaRaJw" class="avatar-canal" aria-label="Canal Telemundo Deportes" target="_blank" rel="noopener noreferrer">
+              <span class="avatar-inicial rosa">T</span>
+            </a>
+            <div class="meta-video">
+              <h3 class="titulo-video">
+                <a href="https://www.youtube.com/watch?v=6tt1vdaRaJw" target="_blank" rel="noopener noreferrer">Argentina vs Austria | Resumen y goles | Mundial FIFA 2026</a>
+              </h3>
+              <div class="nombre-canal">
+                <a href="#">Telemundo Deportes</a>
+                <img class="verificado" src="imagenes/verificado.svg" alt="Verificado" width="14" height="14">
+              </div>
+              <p class="estadisticas-video">2.1 M vistas · hace 1 semana</p>
+            </div>
+            <button class="btn-mas" type="button" aria-label="Más opciones">
+              <img src="imagenes/mas.svg" alt="" width="24" height="24">
+            </button>
+          </div>
+        </article>
+
+        <article class="tarjeta-video">
+          <a href="https://www.youtube.com/watch?v=yT18Y1j7wq4" class="enlace-miniatura" target="_blank" rel="noopener noreferrer">
+            <img
+              class="miniatura"
+              src="https://i.ytimg.com/vi/yT18Y1j7wq4/hqdefault.jpg"
+              alt="Miniatura penales Argentina vs Francia"
+            >
+            <span class="duracion">8:45</span>
+          </a>
+          <div class="info-video">
+            <a href="https://www.youtube.com/watch?v=yT18Y1j7wq4" class="avatar-canal" aria-label="Canal TyC Sports" target="_blank" rel="noopener noreferrer">
+              <span class="avatar-inicial azul">T</span>
+            </a>
+            <div class="meta-video">
+              <h3 class="titulo-video">
+                <a href="https://www.youtube.com/watch?v=yT18Y1j7wq4" target="_blank" rel="noopener noreferrer">Argentina vs Francia | Penales completos | Final Qatar 2022 | Relato Vignolo</a>
+              </h3>
+              <div class="nombre-canal">
+                <a href="#">TyC Sports</a>
+                <img class="verificado" src="imagenes/verificado.svg" alt="Verificado" width="14" height="14">
+              </div>
+              <p class="estadisticas-video">12 M vistas · hace 3 años</p>
+            </div>
+            <button class="btn-mas" type="button" aria-label="Más opciones">
+              <img src="imagenes/mas.svg" alt="" width="24" height="24">
+            </button>
+          </div>
+        </article>
+
+        <article class="tarjeta-video">
+          <a href="https://www.youtube.com/watch?v=7q3b4uVKIcU" class="enlace-miniatura" target="_blank" rel="noopener noreferrer">
+            <img
+              class="miniatura"
+              src="https://i.ytimg.com/vi/7q3b4uVKIcU/hqdefault.jpg"
+              alt="Miniatura Portugal 5-0 Uzbekistán"
+            >
+            <span class="duracion">18:22</span>
+          </a>
+          <div class="info-video">
+            <a href="https://www.youtube.com/watch?v=7q3b4uVKIcU" class="avatar-canal" aria-label="Canal Punto Final" target="_blank" rel="noopener noreferrer">
+              <span class="avatar-inicial naranja">P</span>
+            </a>
+            <div class="meta-video">
+              <h3 class="titulo-video">
+                <a href="https://www.youtube.com/watch?v=7q3b4uVKIcU" target="_blank" rel="noopener noreferrer">Portugal 5-0 Uzbekistán | Cristiano Ronaldo hizo historia | Análisis</a>
+              </h3>
+              <div class="nombre-canal">
+                <a href="#">Punto Final</a>
+                <img class="verificado" src="imagenes/verificado.svg" alt="Verificado" width="14" height="14">
+              </div>
+              <p class="estadisticas-video">456 k vistas · hace 2 días</p>
+            </div>
+            <button class="btn-mas" type="button" aria-label="Más opciones">
+              <img src="imagenes/mas.svg" alt="" width="24" height="24">
+            </button>
+          </div>
+        </article>
+
+        <article class="tarjeta-video">
+          <a href="https://www.youtube.com/watch?v=9LoLMJ3u67I" class="enlace-miniatura" target="_blank" rel="noopener noreferrer">
+            <img
+              class="miniatura"
+              src="https://i.ytimg.com/vi/9LoLMJ3u67I/hqdefault.jpg"
+              alt="Miniatura Argentina vs Francia highlights Mundial 2022"
+            >
+            <span class="duracion">10:15</span>
+          </a>
+          <div class="info-video">
+            <a href="https://www.youtube.com/watch?v=9LoLMJ3u67I" class="avatar-canal" aria-label="Canal ESPN Deportes" target="_blank" rel="noopener noreferrer">
+              <span class="avatar-inicial morado">E</span>
+            </a>
+            <div class="meta-video">
+              <h3 class="titulo-video">
+                <a href="https://www.youtube.com/watch?v=9LoLMJ3u67I" target="_blank" rel="noopener noreferrer">Argentina vs Francia | Goles y highlights | Final del Mundial 2022</a>
+              </h3>
+              <div class="nombre-canal">
+                <a href="#">ESPN Deportes</a>
+                <img class="verificado" src="imagenes/verificado.svg" alt="Verificado" width="14" height="14">
+              </div>
+              <p class="estadisticas-video">8.1 M vistas · hace 3 años</p>
+            </div>
+            <button class="btn-mas" type="button" aria-label="Más opciones">
+              <img src="imagenes/mas.svg" alt="" width="24" height="24">
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
